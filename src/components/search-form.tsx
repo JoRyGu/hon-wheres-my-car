@@ -1,6 +1,15 @@
-import { z } from 'zod';
-import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+
+import { Button } from '@/components/ui/button.tsx';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card.tsx';
 import {
   Form,
   FormControl,
@@ -18,15 +27,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select.tsx';
+
 import { states } from '@/lib/states.ts';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card.tsx';
-import { Button } from '@/components/ui/button.tsx';
 
 type Props = {
   handleSubmit: (values: z.infer<typeof formSchema>) => void;

@@ -1,13 +1,15 @@
+import dayjs from 'dayjs';
+import titleize from 'titleize';
+
+import { TowEventCardAttribute } from '@/components/tow-event-card-attribute.tsx';
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card.tsx';
-import titleize from 'titleize';
+
 import { TowEventAttributes } from '@/lib/types/TowSearchResponse.ts';
-import { TowEventCardAttribute } from '@/components/tow-event-card-attribute.tsx';
-import dayjs from 'dayjs';
 
 type Props = {
   attributes: TowEventAttributes;
