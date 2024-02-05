@@ -7,7 +7,7 @@ import {
 import titleize from 'titleize';
 import { TowEventAttributes } from '@/lib/types/TowSearchResponse.ts';
 import { TowEventCardAttribute } from '@/components/tow-event-card-attribute.tsx';
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 
 type Props = {
   attributes: TowEventAttributes;
